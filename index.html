@@ -4,14 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
     <header
-      class="flex justify-between items-center px-20 py-8 shadow bg-white sticky top-0 z-50"
+      class="flex justify-between items-center px-20 py-4 shadow bg-gray-100 sticky top-0 z-50"
     >
-      <div class="text-2xl font-bold text-green-500">HOANG</div>
+      <div
+        class="text-3xl font-bold tracking-wide"
+        style="font-family: &quot;Space Grotesk&quot;, sans-serif"
+      >
+        <span class="text-blue-600">v</span
+        ><span class="text-gray-900">HOANG</span>
+      </div>
 
       <nav class="space-x-6">
         <a href="#Home" class="hover:text-blue-500">Home</a>
@@ -26,68 +36,78 @@
 
     <section
       id="Home"
-      class="h-screen flex flex-col justify-center items-center text-center bg-gradient-to-r from-blue-500 to-purple-600 text-white px-6"
+      class="relative min-h-screen flex flex-col justify-center items-center text-center text-white px-6 bg-cover bg-center bg-no-repeat"
+      style="background-image: url(&quot;./icon/background.jpg&quot;)"
     >
-      <h1 class="text-5xl font-bold mb-4">
-        Hi, I'm <span class="text-yellow-400">Hoang</span>
-      </h1>
-      <h2 class="text-2xl mb-4">
-        <span id="typed-text"></span>
-      </h2>
+      <div class="absolute inset-0 bg-black/30"></div>
 
-      <p class="max-w-2xl mb-8 text-lg">
-        I'm a 2nd year student majoring in Information Technology at Ho Chi Minh
-        City University of Technology and Engineering.
-      </p>
+      <div class="relative z-10 flex flex-col items-center">
+        <h1 class="text-5xl font-bold mb-4">
+          Hi, I'm <span class="text-yellow-400">Hoang</span>
+        </h1>
 
-      <div class="flex space-x-4 mb-8">
-        <button
-          id="view-work-btn"
-          class="bg-pink-500 px-6 py-3 rounded-full hover:bg-pink-600 hover:-translate-y-2 transition duration-300"
-        >
-          View My Work
-        </button>
+        <h2 class="text-2xl mb-4">
+          <span id="typed-text"></span>
+        </h2>
 
-        <button
-          id="contact-btn"
-          class="border border-white px-6 py-3 rounded-full hover:bg-white hover:text-black"
-        >
-          Get In Touch
-        </button>
-      </div>
+        <p class="max-w-2xl mb-8 text-lg">
+          I'm a 2nd year student majoring in Information Technology at Ho Chi
+          Minh City University of Technology and Engineering.
+        </p>
 
-      <div class="flex space-x-4">
-        <div
-          class="w-10 h-10 border rounded-full flex items-center justify-center hover:bg-white hover:-translate-y-2 transition duration-300"
-        >
-          <a href="https://github.com/levanhoang842006-maker" target="_blank">
-            <img src="icon/iconGit.png" alt="GitHub" class="w-6 h-6" />
-          </a>
+        <!-- Buttons -->
+        <div class="flex space-x-4 mb-8">
+          <button
+            id="view-work-btn"
+            class="bg-pink-500 px-6 py-3 rounded-full hover:bg-pink-600 hover:-translate-y-1 transition duration-300"
+          >
+            View My Work
+          </button>
+
+          <button
+            id="contact-btn"
+            class="border border-white px-6 py-3 rounded-full hover:bg-white hover:text-black transition duration-300"
+          >
+            Get In Touch
+          </button>
         </div>
-        <div
-          class="w-10 h-10 border rounded-full flex items-center justify-center hover:bg-white hover:-translate-y-2 transition duration-300"
-        >
-          <a href="mailto:levanhoang842006@gmail.com" target="_blank">
-            <img src="icon/iconGmail.webp" alt="Email" class="w-6 h-6" />
-          </a>
-        </div>
-        <div
-          class="w-10 h-10 border rounded-full flex items-center justify-center hover:bg-white hover:-translate-y-2 transition duration-300"
-        >
-          <a href="https://www.facebook.com/hoang8406" target="_blank">
-            <img src="icon/iconFB.webp" alt="Facebook" class="w-6 h-6" />
-          </a>
-        </div>
-        <div
-          class="w-10 h-10 border rounded-full flex items-center justify-center hover:bg-white hover:-translate-y-2 transition duration-300"
-        >
-          <a href="https://zalo.me/0363102837" target="_blank">
-            <img src="icon/iconZL.webp" alt="Zalo" class="w-6 h-6" />
-          </a>
+
+        <!-- Social icons -->
+        <div class="flex space-x-4">
+          <div
+            class="w-10 h-10 border border-white/70 rounded-full flex items-center justify-center hover:bg-white hover:-translate-y-1 transition duration-300"
+          >
+            <a href="https://github.com/levanhoang842006-maker" target="_blank">
+              <img src="icon/iconGit.png" alt="GitHub" class="w-6 h-6" />
+            </a>
+          </div>
+
+          <div
+            class="w-10 h-10 border border-white/70 rounded-full flex items-center justify-center hover:bg-white hover:-translate-y-1 transition duration-300"
+          >
+            <a href="mailto:levanhoang842006@gmail.com">
+              <img src="icon/iconGmail.webp" alt="Email" class="w-6 h-6" />
+            </a>
+          </div>
+
+          <div
+            class="w-10 h-10 border border-white/70 rounded-full flex items-center justify-center hover:bg-white hover:-translate-y-1 transition duration-300"
+          >
+            <a href="https://www.facebook.com/hoang8406" target="_blank">
+              <img src="icon/iconFB.webp" alt="Facebook" class="w-6 h-6" />
+            </a>
+          </div>
+
+          <div
+            class="w-10 h-10 border border-white/70 rounded-full flex items-center justify-center hover:bg-white hover:-translate-y-1 transition duration-300"
+          >
+            <a href="https://zalo.me/0363102837" target="_blank">
+              <img src="icon/iconZL.webp" alt="Zalo" class="w-6 h-6" />
+            </a>
+          </div>
         </div>
       </div>
     </section>
-
     <section id="About" class="py-20 bg-gray-100">
       <div class="max-w-6xl mx-auto px-6">
         <div class="text-center mb-12">
@@ -98,7 +118,7 @@
         <div class="grid md:grid-cols-3 gap-12 items-center">
           <div class="flex justify-center md:col-span-1">
             <div class="bg-white p-6 rounded-2xl shadow-lg">
-              <img src="icon/anhthe.jpg" class="w-64" />
+              <img src="icon/profile-pic.jpg" class="w-64" />
             </div>
           </div>
 
@@ -134,7 +154,7 @@
             </div>
 
             <a
-              href="24110218_LeVanHoang.pdf"
+              href="cv.pdf"
               download
               class="inline-block bg-pink-500 text-white px-8 py-3 rounded-full hover:bg-pink-600 hover:-translate-y-2 transition duration-300"
             >
